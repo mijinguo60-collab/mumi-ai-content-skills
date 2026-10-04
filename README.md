@@ -19,6 +19,7 @@
 
 - `mumi-content-pipeline`：总编排，负责平台分支、风格锁、自动质检和发布门槛。
 - `mumi-account-positioning`：账号定位前置门槛，供市场调研、选题和写作先读取。
+- `mumi-market-research`：读取定位后调研目标用户、同类内容、竞品缺口和平台适配性。
 - `mumi-topic-research`：选题调研和实测证据。
 - `mumi-writer`：小红书/抖音图文文案与公众号独立长文。
 - `mumi-copy-review`：去 AI 味、事实、合规和发布前质检。
