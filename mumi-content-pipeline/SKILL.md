@@ -21,6 +21,7 @@ description: 为 Mumi聊Ai 把一个经过账号定位和选题调研的个体�
 
 ```text
 账号定位前置（mumi-account-positioning）
+→ 市场与同类内容调研（mumi-market-research）
 → 选题调研（mumi-topic-research）
 → 去 AI 味写作（mumi-writer）
 → 写作质检（mumi-copy-review）
