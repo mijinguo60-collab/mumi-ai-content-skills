@@ -23,6 +23,7 @@
 - `mumi-topic-research`：选题调研和实测证据。
 - `mumi-writer`：小红书/抖音图文文案与公众号独立长文。
 - `mumi-copy-review`：去 AI 味、事实、合规和发布前质检。
+- `mumi-compliance-gate`：抖音、小红书、微信公众号的禁发、高风险和分发风险门槛；不提供绕过审核的方法。
 - `mumi-penguin-visuals`：Punk 风格选择、企鹅参考库调用、图片提示词和视觉一致性；图片里的画面和文字一次生成，之后只做宽松的明显错误检查。
 - `mumi-gzh-design`：实际使用仓库内 `vendor/gzh-design-skill/` 的主题、组件和校验/预览脚本生成公众号正文 HTML 和预览文件。
 - `mumi-voice-video`：口播视频后续模块，本次图文测试不调用。
