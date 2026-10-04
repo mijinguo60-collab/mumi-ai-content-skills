@@ -1,90 +1,69 @@
-# Mumi 企鹅 40 款生图风格预设
+# Punk 风格选择索引
 
-本目录把 Punk-Skill v1 的公开风格方向重新编译成 Mumi 企鹅 IP 的提示词模块：每个预设都要与 `references/penguin-ip.md` 的三只叠罗汉角色锚点合并使用。这里只保留原创的视觉描述和企鹅适配规则，不复制第三方源文件、原始提示词、示例图或组件。
+本文件把 Punk-Skill v1 的风格模块作为内容生产的选择层。每次内容只选择一个真实 `style_id`，然后把它和企鹅 IP、主题隐喻、平台比例合并成 `style_lock`。不复制第三方源码、原始提示词或示例图片。
 
-## 组合规则
+## 选择门槛
 
-把一个预设插入以下结构，不要同时混用多个主风格：
+1. 先根据选题决定一个视觉隐喻：工具、步骤、失败、结果、系统或观点，只选一个。
+2. 再从下面的真实 style id 中选择最适合的一个，并写出选择理由。
+3. 该 style id 必须贯穿小红书/抖音3:4封面、内容卡、感谢卡，以及公众号插图、提示卡和分隔图。
+4. 不能封面用拼贴、内页用像素、公众号分隔图用摄影；换风格必须视为新的内容系列。
 
-```text
-主体：三只叠罗汉企鹅 + 一个清晰的 AI 工作流隐喻
-角色：读取 penguin-ip.md，选择基础叠罗汉或黄色大外套版，指定一组表情和动作
-风格：从本表选择一个 style id，并使用该行的视觉模块
-构图：按照平台选择 3:4、9:16 或公众号横向安全区，中文标题留给后期叠字
-约束：正好三只企鹅、上小中大下、黑白橙角色锚点、脸不被道具遮挡、无第四只
-```
+## Punk v1 风格 ID
 
-## 内容包风格锁
+| Style ID | 适合内容方向 |
+| --- | --- |
+| `black-white-minimal-concept` | 抽象观点、战略、哲学、批判 |
+| `black-white-etching-editorial-cover` | 机制解释、深度教程、古典科学感 |
+| `semantic-minimal-translation` | 单词、短句、概念转译 |
+| `retro-torn-collage` | 社交传播、文化观察、复盘 |
+| `block-world` | 工具、教程、系统搭建、工作流 |
+| `giant-perspective-chinese-title` | 中文标题主导、强冲击社媒封面 |
+| `interleaved-title-editorial-poster` | 主结论、清单、编辑海报 |
+| `layered-paper-cut-concept-poster` | 单一隐喻、教程总览、纸雕空间 |
+| `paper-emboss-deboss-cover` | 高级方法论、资料包、工艺感封面 |
+| `godot-2d-pixel-metaphor-poster` | 升级、失败点、流程闯关 |
+| `osb-industrial-blue-line-metaphor` | 系统、效率、工程流程 |
+| `brick-world` | 计划、教育、团队、自动化 |
+| `consulting-report-visual` | 商业、策略、产品分析 |
+| `research-journal-concept` | AI机制、实测、研究、材料 |
+| `retro-diffuse-gradient` | 艺术、设计、情绪化文章 |
+| `midcentury-surreal-editorial-cover` | AI工具、数字工作、时代错位隐喻 |
+| `retro-futurism` | 自动化、系统、复古未来设施 |
+| `minimal-public-space-photography` | 观点长文、文化观察、空间秩序 |
+| `business-magazine-front-page` | AI、创业、趋势、商业科技 |
+| `black-white-gray-avant-geometry` | 实验性观点、现代主义、几何构成 |
+| `black-red-silhouette` | 工具教程、风险、效率、速度 |
+| `avant-retro-architecture-poster` | 城市、空间、展览、建筑隐喻 |
+| `retro-ink-dot-matrix-metaphor` | AI、科技、系统、研究 |
+| `black-midcentury-modernist-cover` | 服务场景、产品人物、建筑概念 |
+| `silver-foil-blue-minimal` | 成长路径、方法论、AI工具 |
+| `color-neo-constructivist-megastructure-poster` | 发布、热点、强冲击主题 |
+| `retro-japanese-sci-fi-anime-cover` | AI、代码、心理、社会冲突 |
+| `french-minimal-ink-poster` | 关系、制度、选择、抽象观点 |
+| `brand-collaboration-connection` | 工具集成、品牌联动、自动化 |
+| `anthropic-research-style` | AI、研究、知识、系统 |
+| `kimi-stlye` | AI、产品、材料、创意项目 |
+| `minimal-light-tech` | 科技产品、工具教程、轻科技 |
+| `minimal-visual-metaphor` | AI、商业科技、组织和系统变化 |
+| `pixel-avatar` | 单只企鹅头像、栏目图标、像素化角色 |
+| `grotesque-soul-sketch` | 情绪反应、失败、吐槽 |
+| `messy-crayon-pet-portrait` | 生活化教程、轻松栏目 |
+| `fashion-sketch-observation` | 人设、栏目视觉、趋势观察 |
+| `polaroid-keepsake` | 实测结果、里程碑、系列卡片 |
+| `minimal-paper-acrylic-block-illustration` | 头像、概念卡、留白插图 |
+| `surreal-pop-up-paper-landscape` | 超现实封面、栏目视觉、品牌记忆 |
 
-选择一个预设后，先建立以下 `style_lock`，并把它传给同一篇内容的所有视觉输出：
+## style_lock 模板
 
 ```yaml
 style_lock:
-  style_id: <本表中的一个 ID>
-  material: <纸张 / 木板 / 点阵 / 摄影空间 / 其他>
-  line_or_shape: <线条、几何或轮廓逻辑>
-  palette: <主色、强调色、企鹅黑白橙如何保留>
+  style_id: <真实 Punk style id>
+  reason: <选题和风格的匹配理由>
+  material: <纸张/版画/拼贴/像素/空间等>
+  line_or_shape: <线条、几何、构图语言>
+  palette: <主色和企鹅黑白橙如何共存>
   lighting: <光影或印刷质感>
-  typography: <标题是否后期叠加、标题安全区>
-  negative_constraints: <不得混入的其他主风格>
+  typography: <图片内文字的层级和安全区>
+  forbidden_mixing: <本系列禁止混入的主风格>
 ```
-
-`style_lock` 必须同时作用于封面、图文内页、公众号插图和分隔线、口播视频封面、转场卡和字幕背景。允许改变尺寸、镜头、信息层级和留白，不允许改变主材质、主色彩逻辑、线条/构图语言。这样同一篇内容才会像一个完整系列，而不是一组风格随机的图片。
-
-## 33 款封面风格
-
-| 风格 | Style ID | 风格模块与企鹅融合方式 | 适合 Mumi 内容 |
-| --- | --- | --- | --- |
-| 黑白极简概念 | `black-white-minimal-concept` | 黑白留白、单一实体隐喻、极少明黄橙色；让三只企鹅成为唯一角色焦点 | 抽象观点、战略、方法论 |
-| 黑白复古精密版画封面 | `black-white-etching-editorial-cover` | 铜版画/木刻线密度、旧纸纹理；保留企鹅白脸和橙嘴脚的清晰色点 | 机制解释、批判、深度教程 |
-| 语义转译极简 | `semantic-minimal-translation` | 一个短词或符号被企鹅用动作“翻译”为物体；不让模型生成长中文 | 概念、口号、单个方法 |
-| 复古手撕拼贴 | `retro-torn-collage` | 撕纸边、旧杂志层、贴纸和错位照片框；企鹅贴在主拼贴层上 | 社交传播、文化观察、复盘 |
-| 方块世界 | `block-world` | 几何方块组成一个可读的小世界；三只企鹅共同操作一个流程方块 | 工具、教程、系统搭建 |
-| 立体透视中文标题 | `giant-perspective-chinese-title` | 巨型标题作为透视建筑，企鹅在标题底部或字间穿行；文字后期叠加 | 强冲击社媒封面、活动 |
-| 超大标题图文穿插 | `interleaved-title-editorial-poster` | 中景企鹅与超大短标题前后穿插，文字区域必须预留为空 | 教程主结论、清单 |
-| 立体纸雕概念海报 | `layered-paper-cut-concept-poster` | 多层真实纸片和柔和阴影；企鹅保持手绘外轮廓，成为纸层中的主物件 | 单一隐喻、工作流总览 |
-| 纸面击凸压凹封面 | `paper-emboss-deboss-cover` | 平面纸张、击凸/压凹工艺、克制色彩；企鹅轮廓可做压凹线或局部烫色 | 高级方法论、资料包 |
-| Godot 2D 像素隐喻海报 | `godot-2d-pixel-metaphor-poster` | 完整 2D 像素关卡、目标和阻碍；把三只企鹅当作同一关卡中的角色 | 工具升级、失败点、流程闯关 |
-| OSB 工业蓝线隐喻 | `osb-industrial-blue-line-metaphor` | 满版 OSB 木板、左上工业蓝标签、右下单线隐喻；企鹅只占一个锚点 | 系统、效率、工程化流程 |
-| 积木世界 | `brick-world` | 大块积木、建筑结构、清晰连接关系；底部企鹅承托，中部搭建，顶部指挥 | 团队、计划、教育、自动化 |
-| 报告咨询景观 | `consulting-report-visual` | 咨询报告式框架、结构化图形、克制蓝灰与橙色重点；企鹅演示一个结论 | 商业、策略、产品分析 |
-| 期刊科研概念 | `research-journal-concept` | 期刊图版、标注线、材料/机制结构；企鹅作为比例参照或实验员 | AI 机制、实测、研究 |
-| 复古弥散突变 | `retro-diffuse-gradient` | 复古弥散渐变、柔焦色块、局部突变；企鹅轮廓保持硬朗清楚 | 艺术化选题、情绪封面 |
-| 复古时代错位编辑封面 | `midcentury-surreal-editorial-cover` | 中世纪现代家具/办公室与当代 AI 对象错位组合；企鹅承担时代错位动作 | AI 工具、数字工作、未来隐喻 |
-| 复古未来主义 | `retro-futurism` | 复古印刷未来设施、模拟仪表、物质化信息流；企鹅操作一台夸张但简单的机器 | AI 基础设施、自动化、系统 |
-| 极简空间公共摄影 | `minimal-public-space-photography` | 空旷公共空间、秩序和尺度隐喻；企鹅作为远景小角色，保留可辨识橙色点 | 观点长文、文化观察 |
-| 商业杂志头版 | `business-magazine-front-page` | 杂志头版构图、主标题留白、商业摄影式主体层级；企鹅像封面主角而非装饰 | AI、创业、趋势、商业科技 |
-| 黑白灰先锋几何 | `black-white-gray-avant-geometry` | 黑白灰几何切割、强对比、橙色只做视觉锚点；企鹅与几何体形成张力 | 实验性观点、现代主义 |
-| 黑红身材 | `black-red-silhouette` | 黑底红色速度/风险形状、企鹅以黑白轮廓出现并保留橙色嘴脚 | 工具教程、风险、效率 |
-| 先锋复古建筑海报 | `avant-retro-architecture-poster` | 复古建筑几何、城市海报排版；三只企鹅站在建筑入口或台阶上 | 城市、展览、空间化教程 |
-| 复古冰岛点阵隐喻 | `retro-ink-dot-matrix-metaphor` | 点阵/油墨网屏、复古终端质感、单一系统隐喻；企鹅用像素化但仍可读的轮廓呈现 | AI、科技、系统、研究 |
-| 黑色复古现代主义封面 | `black-midcentury-modernist-cover` | 黑底、复古现代主义家具和硬朗构图；黄色外套版适合作为唯一暖色体 | 服务场景、产品人物、概念封面 |
-| 银色锡纸蓝字 | `silver-foil-blue-minimal` | 银色锡纸反光、冷蓝短标题、极简中心构图；企鹅作为黑橙色对比物 | 成长路径、方法论、AI 工具 |
-| 色彩新构成主义巨构海报 | `color-neo-constructivist-megastructure-poster` | 大色块、斜切结构、巨构舞台；三只企鹅站在结构节点上形成尺度参照 | 热点、发布、强冲击封面 |
-| 日本复古科幻动画 | `retro-japanese-sci-fi-anime-cover` | 复古科幻动画分镜、机械设施、有限高饱和色；企鹅保持圆润手绘而非真人动漫脸 | AI、代码、心理、社会冲突 |
-| 法式极简墨线海报 | `french-minimal-ink-poster` | 米白底、单色墨线、一个关系隐喻；企鹅以简单线面表达动作和选择 | 关系、制度、选择、抽象观点 |
-| 品牌和谐连接 | `brand-collaboration-connection` | 两组工具/流程通过线、节点和桥连接；企鹅在连接处共同拉动流程 | 联动、工具集成、自动化 |
-| 人类研究风格 | `anthropic-research-style` | 极简研究编辑排版、理性留白、细线和注释位；企鹅承担一个可观察的实验动作 | AI、研究、知识、系统 |
-| 基米风格 | `kimi-stlye` | 俯拍档案桌、纸张、截图框和材料样本；企鹅从桌边探头或站在流程卡旁 | AI、产品、材料、创意项目 |
-| 极简轻科技 | `minimal-light-tech` | 纯白空间、轻蓝灰科技物件、低密度构图；三只企鹅是唯一高辨识色角色 | 科技产品、工具教程、品牌概念 |
-| 极简视觉隐喻风 | `minimal-visual-metaphor` | 一个实体物件承载复杂变化，背景极简；企鹅与物件有明确因果动作 | AI、产品、组织和系统变化 |
-
-## 7 款头像与角色衍生风格
-
-这些风格用于企鹅头像、表情包、角色卡和 IP 衍生图，不替代封面风格。仍然必须保留三只企鹅的层级关系，除非明确要求单只角色。
-
-| 风格 | Style ID | 风格模块与企鹅融合方式 | 适合 Mumi 内容 |
-| --- | --- | --- | --- |
-| 像素头像 | `pixel-avatar` | 低分辨率像素块、有限色板；上中下三只企鹅做成一个可读的像素叠罗汉 | 头像、频道图标、游戏化栏目 |
-| 怪诞灵魂手绘 | `grotesque-soul-sketch` | 不规则粗线、夸张眼神和轻微怪诞比例；不能改变企鹅物种或增加人脸 | 情绪反应、失败、吐槽 |
-| 凌乱蜡笔宠物肖像 | `messy-crayon-pet-portrait` | 粗糙蜡笔、儿童画边缘、保留黑白橙三色；让三只企鹅像一张手绘合照 | 轻松栏目、生活化教程 |
-| 时尚速写观察页 | `fashion-sketch-observation` | 速写观察页、姿态线、局部色块；黄色外套版可作为整组穿搭主体 | 人设、栏目封面、趋势观察 |
-| 拍立得纪念卡 | `polaroid-keepsake` | 拍立得白边、日期/标签空位、轻微胶片色；企鹅姿态像一次实测纪念 | 实测结果、里程碑、系列卡片 |
-| 极简纸感丙烯色块插画 | `minimal-paper-acrylic-block-illustration` | 白纸、粗糙丙烯色块、大片留白；用块面分别区分三只企鹅大小 | 头像、概念卡、封面插图 |
-| 立体人物扁平景色纸艺 | `surreal-pop-up-paper-landscape` | 企鹅保持立体圆润，背景向后翻倒并压成平面纸景；不把企鹅变成人 | 超现实封面、栏目视觉、品牌记忆图 |
-
-## 风格选择边界
-
-- 一个成品只选一个主风格；可以改变画幅、主题和动作，不能把纸雕、像素、摄影和版画混成一锅。
-- 先决定内容价值，再选风格：教程/工作流优先 `block-world`、`brick-world`、`layered-paper-cut-concept-poster`；实测优先 `research-journal-concept`、`kimi-stlye`、`polaroid-keepsake`；风险/避坑优先 `black-red-silhouette`、`mono-orange-alert`（Mumi 自有辅助模块）；口播优先 `cinematic-flat` 或 `warm-comic`（Mumi 自有辅助模块）。
-- 复杂中文标题、长提示词和截图不要交给生图模型生成，统一预留安全区后期叠加。
