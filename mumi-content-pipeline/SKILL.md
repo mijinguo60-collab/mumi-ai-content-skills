@@ -25,6 +25,7 @@ description: 为 Mumi聊Ai 把一个经过账号定位和选题调研的个体�
 → 选题调研（mumi-topic-research）
 → 去 AI 味写作（mumi-writer）
 → 写作质检（mumi-copy-review）
+→ 平台合规门槛（mumi-compliance-gate）
 → 写同题的两条内容分支
 → 自动选择一个 Punk 风格并建立 style_lock
 → 读取企鹅三视图和动作/表情参考库
