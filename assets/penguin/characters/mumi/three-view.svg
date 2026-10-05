@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 1200" role="img" aria-label="Mumi character three-view sheet">
+  <rect width="3000" height="1200" fill="#faf9f7"/>
+  <g stroke="#111" stroke-width="16" stroke-linejoin="round">
+    <g id="front">
+      <ellipse cx="600" cy="790" rx="300" ry="350" fill="#111"/>
+      <ellipse cx="600" cy="405" rx="270" ry="285" fill="#111"/>
+      <path d="M350 700 C230 760 260 930 370 970 C420 920 405 790 350 700Z" fill="#111"/>
+      <path d="M850 700 C970 760 940 930 830 970 C780 920 795 790 850 700Z" fill="#111"/>
+      <ellipse cx="455" cy="1085" rx="115" ry="60" fill="#f47b20"/>
+      <ellipse cx="745" cy="1085" rx="115" ry="60" fill="#f47b20"/>
+      <ellipse cx="500" cy="405" rx="88" ry="100" fill="#fff" stroke="none"/>
+      <ellipse cx="700" cy="405" rx="88" ry="100" fill="#fff" stroke="none"/>
+      <circle cx="500" cy="425" r="24" fill="#111" stroke="none"/>
+      <circle cx="700" cy="425" r="24" fill="#111" stroke="none"/>
+      <ellipse cx="600" cy="530" rx="62" ry="43" fill="#f47b20"/>
+      <path d="M565 550 Q600 574 635 550" fill="none"/>
+      <path d="M405 575 C450 640 750 640 795 575 L810 662 C730 730 470 730 390 662Z" fill="#ef5b2a"/>
+      <path d="M705 655 L755 875 L655 895 L635 665Z" fill="#ef5b2a"/>
+    </g>
+    <g id="side">
+      <ellipse cx="1500" cy="790" rx="280" ry="350" fill="#111"/>
+      <ellipse cx="1500" cy="405" rx="260" ry="280" fill="#111"/>
+      <path d="M1320 700 C1215 760 1245 925 1350 970 C1400 915 1380 790 1320 700Z" fill="#111"/>
+      <ellipse cx="1460" cy="1085" rx="135" ry="60" fill="#f47b20"/>
+      <ellipse cx="1595" cy="430" rx="78" ry="95" fill="#fff" stroke="none"/>
+      <circle cx="1605" cy="448" r="24" fill="#111" stroke="none"/>
+      <path d="M1650 500 Q1765 470 1760 535 Q1725 575 1650 555Z" fill="#f47b20"/>
+      <path d="M1370 580 C1420 640 1585 645 1625 585 L1640 665 C1570 725 1420 715 1355 660Z" fill="#ef5b2a"/>
+      <path d="M1570 655 L1605 880 L1510 892 L1495 670Z" fill="#ef5b2a"/>
+    </g>
+    <g id="back">
+      <ellipse cx="2400" cy="790" rx="300" ry="350" fill="#111"/>
+      <ellipse cx="2400" cy="405" rx="270" ry="285" fill="#111"/>
+      <path d="M2150 700 C2030 760 2060 930 2170 970 C2220 920 2205 790 2150 700Z" fill="#111"/>
+      <path d="M2650 700 C2770 760 2740 930 2630 970 C2580 920 2595 790 2650 700Z" fill="#111"/>
+      <ellipse cx="2260" cy="1085" rx="115" ry="60" fill="#f47b20"/>
+      <ellipse cx="2540" cy="1085" rx="115" ry="60" fill="#f47b20"/>
+      <path d="M2205 575 C2250 640 2550 640 2595 575 L2610 662 C2530 730 2270 730 2190 662Z" fill="#ef5b2a"/>
+      <path d="M2505 655 L2555 875 L2455 895 L2435 665Z" fill="#ef5b2a"/>
+    </g>
+  </g>
+  <g stroke="#ddd6ca" stroke-width="4">
+    <line x1="1000" y1="90" x2="1000" y2="1110"/>
+    <line x1="2000" y1="90" x2="2000" y2="1110"/>
+  </g>
+</svg>
