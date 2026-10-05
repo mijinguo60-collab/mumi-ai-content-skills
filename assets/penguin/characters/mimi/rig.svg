@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-label="Mimi front rig">
+  <g id="body">
+    <ellipse cx="600" cy="800" rx="305" ry="355" fill="#111" stroke="#111" stroke-width="18"/>
+    <ellipse cx="600" cy="430" rx="280" ry="300" fill="#111" stroke="#111" stroke-width="18"/>
+  </g>
+  <g id="feet">
+    <ellipse id="left-foot" cx="465" cy="1090" rx="120" ry="62" fill="#f47b20" stroke="#111" stroke-width="18"/>
+    <ellipse id="right-foot" cx="735" cy="1090" rx="120" ry="62" fill="#f47b20" stroke="#111" stroke-width="18"/>
+  </g>
+  <g id="wings">
+    <path id="left-wing" d="M350 720 C230 770 250 940 365 980 C410 930 398 800 350 720Z" fill="#111" stroke="#111" stroke-width="18"/>
+    <path id="right-wing" d="M850 720 C970 770 950 940 835 980 C790 930 802 800 850 720Z" fill="#111" stroke="#111" stroke-width="18"/>
+  </g>
+  <g id="accessory-notebook">
+    <path d="M735 690 L930 725 L895 925 L705 890Z" fill="#f3d41d" stroke="#111" stroke-width="18"/>
+    <path d="M565 688 Q620 720 700 724" fill="none" stroke="#111" stroke-width="28" stroke-linecap="round"/>
+  </g>
+  <g id="face">
+    <ellipse cx="500" cy="430" rx="90" ry="105" fill="#fff"/>
+    <ellipse cx="700" cy="430" rx="90" ry="105" fill="#fff"/>
+    <circle id="left-pupil" cx="500" cy="450" r="25" fill="#111"/>
+    <circle id="right-pupil" cx="700" cy="450" r="25" fill="#111"/>
+    <ellipse id="beak" cx="600" cy="555" rx="65" ry="45" fill="#f47b20" stroke="#111" stroke-width="14"/>
+    <path id="mouth-closed" d="M565 578 Q600 600 635 578" fill="none" stroke="#111" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>
